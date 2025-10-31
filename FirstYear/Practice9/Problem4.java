@@ -1,28 +1,31 @@
-import java.util.Scanner;
 import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Problem4 {
     void main() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc =  new Scanner(System.in);
 
-        try {
-            System.out.print("Enter the first number (a): ");
-            int a = sc.nextInt();
+        int min_am = 1;
+        int max_am = 1;
 
-            System.out.print("Enter the second number (b): ");
-            int b = sc.nextInt();
+        System.out.print("Enter the number - ");
+        int buff = sc.nextInt();
+        int min_num = buff;
+        int max_num = buff;
 
-            System.out.print("Enter the third number (c): ");
-            int c = sc.nextInt();
+        while (true) {
+            System.out.print("Enter the number (Enter 0 to stop) - ");
+            try {
+                buff = sc.nextInt();
+                if (buff == 0) { break; }
+                if (buff > max_num) { max_num = buff; max_am = 1; }
+                else if (buff == max_num) { max_am++; }
+                else if (buff < min_num) { min_num = buff; min_am = 1; }
+                else if  (buff == min_num) { min_am++; }
 
-            if ((a + b > c) && (a + c > b) & (b + c > a)) {
-                System.out.println("OK");
-            } else {
-                System.out.println("NOT OK");
-            }
-
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input! Please enter natural numbers only.");
+            } catch (InputMismatchException e) { System.out.print("Input valid number!"); }
         }
+        System.out.println("min number - " + min_num + ", " + min_am + " times");
+        System.out.println("max number - " + max_num + ", " + max_am + " times");
     }
 }

@@ -1,55 +1,24 @@
-import java.util.Scanner;
-import java.util.InputMismatchException;
-
 public class Problem2 {
-    void main() {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        int suit = (int)(Math.random() * 4) + 1;
+        int rank = (int)(Math.random() * 13) + 2;
 
-        try {
-            System.out.print("Enter the first number: ");
-            double num1 = sc.nextDouble();
+        String suitName = switch(suit) {
+            case 1 -> "Clubs";
+            case 2 -> "Hearts";
+            case 3 -> "Diamonds";
+            case 4 -> "Spades";
+            default -> "Unknown";
+        };
 
-            System.out.print("Enter the second number: ");
-            double num2 = sc.nextDouble();
+        String rankName = switch(rank) {
+            case 11 -> "jack";
+            case 12 -> "queen";
+            case 13 -> "king";
+            case 14 -> "Ace";
+            default -> String.valueOf(rank);
+        };
 
-            System.out.print("Enter operation (+, -, *, /): ");
-            String operation = sc.next();
-
-            double result;
-
-            switch (operation) {
-                case "+":
-                    result = num1 + num2;
-                    System.out.println("Result: " + result);
-                    break;
-
-                case "-":
-                    result = num1 - num2;
-                    System.out.println("Result: " + result);
-                    break;
-
-                case "*":
-                    result = num1 * num2;
-                    System.out.println("Result: " + result);
-                    break;
-
-                case "/":
-                    if (num2 != 0) {
-                        result = num1 / num2;
-                        System.out.println("Result: " + result);
-                    } else {
-                        System.out.println("Error: Division by zero!");
-                    }
-                    break;
-
-                default:
-                    System.out.println("Invalid operation!");
-                    break;
-            }
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input! Please enter correct values for numbers.");
-        } catch (Exception e) {
-            System.out.println("An unexpected error");
-        }
+        System.out.println("Your card is " + rankName + " of " + suitName);
     }
 }

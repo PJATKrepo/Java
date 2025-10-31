@@ -1,13 +1,12 @@
 public class Problem1 {
-    void main() {
-        int a = 37, b = 98;
+    void main()
+    {
+        boolean isFemale = false;
+        final String gender = isFemale ? "Women" : "Man";
+        System.out.println(gender);
 
-        System.out.println("a & b = " + (a & b));
-        System.out.println("a | b = " + (a | b));
-        System.out.println("a ^ b = " + (a ^ b));
-        System.out.println("a << 2 = " + (a << 2));
-        System.out.println("(a >> 1) & b = " + ((a >> 1) & b));
-        System.out.println("(a << 2) ^ (b >> 2) = " + ((a << 2) ^ (b >> 2)));
-        System.out.println("a & ~(b >> 3) = " + (a & ~(b >> 3)));
+        boolean isYoung = true;
+        final String g = (isFemale ? (isYoung ? "Girl" : "Women") : (isYoung ? "Boy" : "Man"));
+        System.out.println(g);
     }
 }
