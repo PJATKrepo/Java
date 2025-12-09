@@ -36,6 +36,7 @@ Below is the list of problem sets and the key programming concepts covered in ea
 | **`ProblemSet11`** | **Task 11** | 🏗️ Sorting Algorithms (Selection Sort) | [📂](./ProblemSet11) |
 | **`ProblemSet12`** | **Task 12** | 📦 OOP Basics: Classes & Objects | [📂](./ProblemSet12) |
 | **`ProblemSet13`** | **Task 13** | 🤝 OOP: Object Interaction | [📂](./ProblemSet13) |
+| **`ProblemSet14`** | **Task 14** | 👨‍👦 OOP: Inheritance & Polymorphism | [📂](./ProblemSet14) |
 
 ## 🚀 Technologies
 * **Language:** Java [VERSION, e.g., 17 or 21]
