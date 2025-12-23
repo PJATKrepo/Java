@@ -1,0 +1,8 @@
+7
+John 1980 Mercedes 255 255 102
+Mary 1997
+Alice 1993 Skoda 0 127 153
+Sharon 2002 Ferrari 255 0 0
+Kenny 1991 Opel 255 255 255
+Kate 1999 Mercedes 0 0 255
+Jane 2001
