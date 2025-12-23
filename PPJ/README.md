@@ -37,6 +37,8 @@ Below is the list of problem sets and the key programming concepts covered in ea
 | **`ProblemSet12`** | **Task 12** | 📦 OOP Basics: Classes & Objects | [📂](./ProblemSet12) |
 | **`ProblemSet13`** | **Task 13** | 🤝 OOP: Object Interaction | [📂](./ProblemSet13) |
 | **`ProblemSet14`** | **Task 14** | 👨‍👦 OOP: Inheritance & Polymorphism | [📂](./ProblemSet14) |
+| **`ProblemSet15`** | **Task 15** | 🧩 OOP: Inheritance, Polymorphism, Strategy Pattern | [📂](./ProblemSet15) |
+| **`ProblemSet16`** | **Task 16** | 🚨 Exception Handling: Custom Exceptions, Error Management | [📂](./ProblemSet16) |
 
 ## 🚀 Technologies
 * **Language:** Java [VERSION, e.g., 17 or 21]
