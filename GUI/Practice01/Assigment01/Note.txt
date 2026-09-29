@@ -1,0 +1,3 @@
+This exercise focuses on designing and implementing a class hierarchy in Java. Students create a base class that defines shared attributes and behavior, and then extend it with specialized subclasses that introduce their own attack logic.
+
+The task develops practical skills related to access modifiers, constructor chaining with super, method overriding, and runtime polymorphism. It also introduces the use of the Random class, arithmetic calculations, type casting, and designing clear textual object representations. The exercise helps students understand how a common behavioral contract can be implemented differently across subclasses and how to test a class hierarchy using a dedicated driver class.

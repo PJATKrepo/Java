@@ -1,0 +1,17 @@
+package task13;
+
+import java.awt.*;
+import java.util.EventObject;
+
+public class ColorEvent extends EventObject {
+    private final Color color;
+
+    public ColorEvent(Object source, Color color) {
+        super(source);
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+}
